@@ -1,0 +1,121 @@
+@media (max-width: 1440px) {
+    .grid {
+        width: 100%;
+    }
+
+    .hero,
+    .pay {
+        padding-left: 70px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "content-img_1 content-img_1 "
+            "content-item_1 content-item_1"
+            "one_content one_content"
+            "content-img_2 content-img_2"
+            "content-item_ content-item_2"
+            "content-img_3 content-img_3"
+            "content-item_3 content-item_3"
+            "content-img_4 content-img_4"
+            "content-item_4 content-item_4"
+            "empty empty"
+            "content-item_5 content-item_5"
+            "content-item_6 content-item_6";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+        grid-gap: 30px;
+        padding: 0;
+    }
+
+    .statistics-qualities {
+        justify-content: center;
+    }
+
+    .form__input {
+        width: 70%;
+    }
+
+    .hero__title {
+        font-size: 36px;
+    }
+
+    .hero,
+    .info,
+    .pay {
+        padding-left: 0;
+    }
+
+    .achieve,
+    .statistics {
+        padding-right: 0;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-areas: "footer-form footer-form" "footer-nav footer-nav" "footer-social footer-social";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 50px;
+        grid-gap: 0;
+        grid-row-gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-nav,
+    .header__button {
+        display: none;
+    }
+
+    .header-nav {
+        display: none;
+    }
+    .burger,
+    .star {
+        display: block;
+    }
+
+    .header__logo img {
+        padding: 0 20px;
+    }
+
+    .footer-copyright,
+    .copyright-right {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-form {
+        width: 100%;
+    }
+
+    .form {
+        padding-left: 10px;
+    }
+    .info__title {
+        font-size: 30px;
+    }
+
+    .info__descr {
+        padding-left: 55px;
+        width: 440px;
+    }
+
+    .header {
+        width: 540px;
+    }
+    .footer-form__descr {
+        width: 300px;
+    }
+}
